@@ -1,36 +1,37 @@
-let heroNameAndXP = ["Rilgar" , 10001]
+let heroNameAndXP = ["Rilgar" , 10000]
 let message = "O herói de nome " + heroNameAndXP[0] + " está no nível de ";
 
 switch(true){
     case heroNameAndXP[1] <= 1000:
-    console.log(message + "Ferro")
+    message += "Ferro"
     break
 
     case heroNameAndXP[1] > 1000 && heroNameAndXP[1] <= 2000:
-    console.log(message + "Bronze")
+    message += "Bronze"
     break
     
     case heroNameAndXP[1] > 2000 && heroNameAndXP[1] <= 5000:
-    console.log(message + "Prata")
+    message += "Prata"
     break
 
     case heroNameAndXP[1] > 5000 && heroNameAndXP[1] <= 7000:
-    console.log(message + "Ouro")
+    message += "Ouro"
     break
 
     case heroNameAndXP[1] > 7000 && heroNameAndXP[1] <= 8000:
-    console.log(message + "Platina")
+    message += "Platina"
     break
 
     case heroNameAndXP[1] > 8000 && heroNameAndXP[1] <= 9000:
-    console.log(message + "Ascendente")
+    message += "Ascendente"
     break
 
     case heroNameAndXP[1] > 9000 && heroNameAndXP[1] <= 10000:
-    console.log(message + "Imortal")
+    message += "Imortal"
     break
 
     case heroNameAndXP[1] > 10000: 
-    console.log(message + "Radiante")
+    message += "Radiante"
     break
 }
+console.log(message)
